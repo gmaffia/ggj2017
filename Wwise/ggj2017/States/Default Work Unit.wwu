@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D3762F79-3B1D-4172-A052-73F6493A021F}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{D3762F79-3B1D-4172-A052-73F6493A021F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D3762F79-3B1D-4172-A052-73F6493A021F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}">
+					<ChildrenList>
+						<State Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
+						<State Name="isAlice" ID="{13BBF03D-978F-4599-AE7E-CCA8A9190E44}"/>
+						<State Name="isBob" ID="{3B7CE4A7-518B-49AC-A805-5494800046C3}"/>
+						<State Name="isSlasher" ID="{02049844-CC48-4F5F-B1D9-318306BFD19C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="player2_state" ID="{7F0F1B31-B57F-4835-9D5A-94A916EC09BD}">
+					<ChildrenList>
+						<State Name="None" ID="{56DBBC99-5225-4AF3-B82B-45BB28EB1DA1}"/>
+						<State Name="isAlice" ID="{BF9F9281-0EB4-4231-9FEF-A8FEC1AC4B4C}"/>
+						<State Name="isBob" ID="{FC518040-5AFD-4D28-9854-E80F70892704}"/>
+						<State Name="isSlasher" ID="{52154371-47ED-4015-9D6C-395DDBB0DC5A}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="player3_state" ID="{9DC9218E-17A1-4738-A84F-BE4658B0EA7A}">
+					<ChildrenList>
+						<State Name="None" ID="{BD98B34E-F504-4541-9AA7-2F8015E90AE3}"/>
+						<State Name="isAlice" ID="{BEB00984-ADDC-4A32-91DB-C84203328020}"/>
+						<State Name="isBob" ID="{1E027E0E-024F-4B0B-82ED-7AD58121AD96}"/>
+						<State Name="isSlasher" ID="{605A498F-EB94-4BBB-8440-FAAC23F39075}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

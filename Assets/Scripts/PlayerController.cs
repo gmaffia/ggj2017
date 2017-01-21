@@ -17,12 +17,14 @@ public class PlayerController : NetworkBehaviour
         if (isServer)
         {
             CmdJoinPlayer();
+            RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
         }
 
         if(isLocalPlayer)
         {
             GetComponent<SpriteRenderer>().material.color = Color.blue;
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
+			Camera.main.GetComponent<FollowCam> ().SetTarget (transform);
         }
     }
 
@@ -75,5 +77,15 @@ public class PlayerController : NetworkBehaviour
     void CmdJoinPlayer()
     {
         GetComponent<CharacterIdentifier>().playerId = GameObject.FindObjectOfType<GameManager>().registerPlayer();
+    }
+
+    [ClientRpc]
+    void RpcSetSpawnPoint(string playerId)
+    {
+        if(isLocalPlayer)
+        {
+            // Get a spawn point
+            gameObject.transform.position = GameObject.FindObjectOfType<GameManager>().findSpawnPointByPlayerId(playerId).transform.position;
+        }
     }
 }

@@ -3,7 +3,25 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{64CCC328-21BF-49B0-B854-49E49F042E52}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}">
+							<ChildrenList>
+								<AuxBus Name="SFXReverb" ID="{9622B9FF-FCF7-4A24-ACF1-4AB10837053C}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{6A90AFB8-DD70-4756-BE4C-001AF1AC4325}">
+							<ChildrenList>
+								<AuxBus Name="MusicReverb" ID="{8D5EDE7A-D9B8-4DEC-B1A8-4411852F711F}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Ambient" ID="{A36C6D1D-8C28-457C-A856-6ADBB6A34086}">
+							<ChildrenList>
+								<AuxBus Name="Ambient_Reverb" ID="{F08F2099-4D8D-4012-84F7-0585E8E59FE1}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
 			</ChildrenList>
