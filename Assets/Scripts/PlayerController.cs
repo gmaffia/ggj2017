@@ -24,6 +24,7 @@ public class PlayerController : NetworkBehaviour
         {
             GetComponent<SpriteRenderer>().material.color = Color.blue;
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
+			Camera.main.GetComponent<FollowCam> ().SetTarget (transform);
         }
     }
 
