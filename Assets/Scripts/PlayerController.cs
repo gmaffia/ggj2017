@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class CharacterController : NetworkBehaviour
+public class PlayerController : NetworkBehaviour
 {
     public GameObject markerPrefab;
-    public int playerId;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        if(isServer)
+        {
+            CmdJoinPlayer();
+        }
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,8 +37,10 @@ public class CharacterController : NetworkBehaviour
 
     public override void OnStartLocalPlayer()
     {
+        Debug.Log("Player ID is " + GetComponent<CharacterIdentifier>().playerId);
         GetComponent<SpriteRenderer>().material.color = Color.blue;
     }
+
 
     [Command]
     void CmdDisclosePosition()
@@ -47,8 +52,14 @@ public class CharacterController : NetworkBehaviour
             transform.rotation
         );
 
-
+        marker.GetComponent<CharacterIdentifier>().playerId = GetComponent<CharacterIdentifier>().playerId;
 
         NetworkServer.Spawn(marker);
+    }
+
+    [Command]
+    void CmdJoinPlayer()
+    {
+        GetComponent<CharacterIdentifier>().playerId = GameObject.FindObjectOfType<GameManager>().registerPlayer();
     }
 }
