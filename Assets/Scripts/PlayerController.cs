@@ -6,14 +6,24 @@ using UnityEngine.Networking;
 public class PlayerController : NetworkBehaviour
 {
     public GameObject markerPrefab;
+    public float destroyAfter = 3.0f;
+    public float velocity = 3.0f;
+
+    private GameObject currentMarker = null;
 
 	// Use this for initialization
 	void Start () {
-        if(isServer)
+        if (isServer)
         {
             CmdJoinPlayer();
         }
-        
+
+        Debug.Log("Player ID is " + GetComponent<CharacterIdentifier>().playerId);
+        if(isLocalPlayer)
+        {
+            GetComponent<SpriteRenderer>().material.color = Color.blue;
+            FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
+        }
     }
 	
 	// Update is called once per frame
@@ -24,8 +34,8 @@ public class PlayerController : NetworkBehaviour
             return;
         }
 
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
+        var x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
+        var y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
 
         transform.Translate(x, y, 0);
 
@@ -34,13 +44,6 @@ public class PlayerController : NetworkBehaviour
             CmdDisclosePosition();
         }
     }
-
-    public override void OnStartLocalPlayer()
-    {
-        Debug.Log("Player ID is " + GetComponent<CharacterIdentifier>().playerId);
-        GetComponent<SpriteRenderer>().material.color = Color.blue;
-    }
-
 
     [Command]
     void CmdDisclosePosition()
@@ -55,11 +58,14 @@ public class PlayerController : NetworkBehaviour
         marker.GetComponent<CharacterIdentifier>().playerId = GetComponent<CharacterIdentifier>().playerId;
 
         NetworkServer.Spawn(marker);
+
+        Destroy(marker, destroyAfter);
     }
 
     [Command]
     void CmdJoinPlayer()
     {
+        Debug.Log("Joining Player Command");
         GetComponent<CharacterIdentifier>().playerId = GameObject.FindObjectOfType<GameManager>().registerPlayer();
     }
 }
