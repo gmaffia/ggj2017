@@ -17,6 +17,7 @@ public class PlayerController : NetworkBehaviour
         if (isServer)
         {
             CmdJoinPlayer();
+            RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
         }
 
         if(isLocalPlayer)
@@ -75,5 +76,15 @@ public class PlayerController : NetworkBehaviour
     void CmdJoinPlayer()
     {
         GetComponent<CharacterIdentifier>().playerId = GameObject.FindObjectOfType<GameManager>().registerPlayer();
+    }
+
+    [ClientRpc]
+    void RpcSetSpawnPoint(string playerId)
+    {
+        if(isLocalPlayer)
+        {
+            // Get a spawn point
+            gameObject.transform.position = GameObject.FindObjectOfType<GameManager>().findSpawnPointByPlayerId(playerId).transform.position;
+        }
     }
 }
