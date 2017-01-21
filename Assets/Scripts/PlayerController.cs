@@ -10,9 +10,10 @@ public class PlayerController : NetworkBehaviour
     public float velocity = 3.0f;
 
     private GameObject currentMarker = null;
-
+	private Rigidbody2D rBody;
 	// Use this for initialization
 	void Start () {
+		rBody = GetComponent<Rigidbody2D> ();
         if (isServer)
         {
             CmdJoinPlayer();
@@ -25,7 +26,11 @@ public class PlayerController : NetworkBehaviour
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
         }
     }
-	
+	void FixedUpdate(){
+		float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
+		float y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
+		rBody.MovePosition (rBody.position + new Vector2(x, y));
+	}
 	// Update is called once per frame
 	void Update () {
 
@@ -34,10 +39,7 @@ public class PlayerController : NetworkBehaviour
             return;
         }
 
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
-        var y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
-
-        transform.Translate(x, y, 0);
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
