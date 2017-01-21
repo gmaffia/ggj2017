@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class CharacterController : NetworkBehaviour
 {
     public GameObject markerPrefab;
+    public int playerId;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +46,8 @@ public class CharacterController : NetworkBehaviour
             transform.position,
             transform.rotation
         );
+
+
 
         NetworkServer.Spawn(marker);
     }
