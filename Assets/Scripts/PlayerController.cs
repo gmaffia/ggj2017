@@ -27,7 +27,13 @@ public class PlayerController : NetworkBehaviour
     }
 
 	void FixedUpdate(){
-		float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
+
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
+        float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
 		float y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
 		rBody.MovePosition (rBody.position + new Vector2(x, y));
 	}
