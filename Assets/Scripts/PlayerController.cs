@@ -11,8 +11,12 @@ public class PlayerController : NetworkBehaviour
 
     private GameObject currentMarker = null;
 	private Rigidbody2D rBody;
+
+	private Animator charAnimator;
+
 	// Use this for initialization
 	void Start () {
+		
 		rBody = GetComponent<Rigidbody2D> ();
         if (isServer)
         {
@@ -22,10 +26,22 @@ public class PlayerController : NetworkBehaviour
 
         if(isLocalPlayer)
         {
-            GetComponent<SpriteRenderer>().material.color = Color.blue;
+            //GetComponent<SpriteRenderer>().material.color = Color.blue;
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
         }
 
+		charAnimator = GetComponent<Animator> ();
+		switch (FindObjectOfType<GameManager> ().currentPlayer) {
+			case ("Alice"):
+				charAnimator.SetBool("Alice",true);
+			break;
+			case ("Bob"):
+				charAnimator.SetBool("Bob",true);
+			break;
+			case ("Slasher"):
+				charAnimator.SetBool("Slasher",true);
+			break;
+		}
     }
 
 	void FixedUpdate(){
