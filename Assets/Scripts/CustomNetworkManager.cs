@@ -8,12 +8,11 @@ public class CustomNetworkManager : NetworkManager {
 	public override void OnClientConnect (NetworkConnection conn)
 	{
 		base.OnClientConnect (conn);
-		Shadow.SetActive (true);
-
+		Instantiate (Shadow);
 	}
 	public override void OnStartHost ()
 	{
 		base.OnStartHost ();
-		Shadow.SetActive (true);
+		Instantiate (Shadow);
 	}
 }
