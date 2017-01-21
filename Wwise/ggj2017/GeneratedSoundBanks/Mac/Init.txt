@@ -1,0 +1,31 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1026818895	player3_state			\Default Work Unit\player3_state	
+	1675162649	player1_state			\Default Work Unit\player1_state	
+	2421122886	player2_state			\Default Work Unit\player2_state	
+
+State	ID	Name	State Group			Notes
+	748895195	None	player3_state			
+	2165475990	isBob	player3_state			
+	3013609521	isSlasher	player3_state			
+	3354824903	isAlice	player3_state			
+	748895195	None	player1_state			
+	2165475990	isBob	player1_state			
+	3013609521	isSlasher	player1_state			
+	3354824903	isAlice	player1_state			
+	748895195	None	player2_state			
+	2165475990	isBob	player2_state			
+	3013609521	isSlasher	player2_state			
+	3354824903	isAlice	player2_state			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\Ambient	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1575916026	MusicReverb			\Default Work Unit\Master Audio Bus\Music\MusicReverb	
+	2943096322	SFXReverb			\Default Work Unit\Master Audio Bus\SFX\SFXReverb	
+	3036939274	Ambient_Reverb			\Default Work Unit\Master Audio Bus\Ambient\Ambient_Reverb	
+
