@@ -19,18 +19,25 @@ public class PlayerController : NetworkBehaviour
             CmdJoinPlayer();
         }
 
-        Debug.Log("Player ID is " + GetComponent<CharacterIdentifier>().playerId);
         if(isLocalPlayer)
         {
             GetComponent<SpriteRenderer>().material.color = Color.blue;
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
         }
     }
+
 	void FixedUpdate(){
-		float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
+
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
+        float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
 		float y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
 		rBody.MovePosition (rBody.position + new Vector2(x, y));
 	}
+
 	// Update is called once per frame
 	void Update () {
 
@@ -67,7 +74,6 @@ public class PlayerController : NetworkBehaviour
     [Command]
     void CmdJoinPlayer()
     {
-        Debug.Log("Joining Player Command");
         GetComponent<CharacterIdentifier>().playerId = GameObject.FindObjectOfType<GameManager>().registerPlayer();
     }
 }
