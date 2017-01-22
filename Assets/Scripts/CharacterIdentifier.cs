@@ -45,6 +45,8 @@ public class CharacterIdentifier : NetworkBehaviour
         Debug.Log("Animation event player?" + animationSoundPlayer.ToString());
         Debug.Log("Locally, the player is " + playerId);
         AkSoundEngine.SetState("player1_state", "is" + playerId);
+        GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
+        AkSoundEngine.PostEvent("play_ambient", soundBank);
 
         if (animationSoundPlayer != null)
         {
@@ -63,6 +65,8 @@ public class CharacterIdentifier : NetworkBehaviour
         base.OnStartClient();
         Debug.Log("Old->>>" + playerId);       
 		UpdateCharacterSkin ();
+        Debug.Log("Current Player roster");
+        FindObjectOfType<GameManager>().printPlayers();
     }
 
 	public void UpdateCharacterSkin(){

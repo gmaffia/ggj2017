@@ -5,18 +5,35 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 public class GameManager : NetworkBehaviour {
 
-	public GameObject Alice;
-	public GameObject Bob;
-	public GameObject Slasher;
+    public GameObject Alice;
+    public GameObject Bob;
+    public GameObject Slasher;
     public SyncListString players = new SyncListString();
     public SyncListInt spawnIndexes = new SyncListInt();
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
     public string currentPlayer = null;
+<<<<<<< HEAD
 	public string HeroScene;
 	public string SlasherScene;
+=======
+
+    void Start()
+    {        
+        GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
+        AkSoundEngine.PostEvent("play_music", soundBank);
+    }
+
+    public void printPlayers()
+    {
+        for(int i = 0;  i < players.Count; i++)
+        {
+            Debug.Log("Player " + i + " -> " + players[i]);
+        }
+    }
+
+>>>>>>> 47f71919bc1892c3bfe90eace3108712c512d9dc
     public string registerPlayer()
     {
-        Debug.Log("Registering player");
         string playerId = availablePlayers[players.Count];
         players.Add(playerId);
         return playerId;

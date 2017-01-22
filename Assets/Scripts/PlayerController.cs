@@ -23,7 +23,7 @@ public class PlayerController : NetworkBehaviour
         if (isServer)
         {
             CmdJoinPlayer();
-            //RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
+            RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
         }
 
         if(isLocalPlayer)

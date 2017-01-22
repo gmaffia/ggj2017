@@ -13,9 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EMIT_WAVE = 791019152U;
+        static const AkUniqueID LISTEN_WAVE = 1840284572U;
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
-        static const AkUniqueID PLAYER1_PANTING = 4186058215U;
         static const AkUniqueID PLAYER1_STEP = 3235708380U;
         static const AkUniqueID PLAYER2_STEP = 2345449353U;
         static const AkUniqueID PLAYER3_STEP = 2062355390U;

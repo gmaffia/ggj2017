@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3487451885" DateHigh="30569657"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="537857085" DateHigh="30569684"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="3487451885" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="3487451885" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Attenuations\Default Work Unit.wwu" DateLow="3487451885" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Audio Devices\Default Work Unit.wwu" DateLow="3487608014" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Control Surface Sessions\Default Work Unit.wwu" DateLow="3487608014" DateHigh="30569657"/>
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Conversion Settings\Default Work Unit.wwu" DateLow="3487608014" DateHigh="30569657"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Conversion Settings\Default Work Unit.wwu" DateLow="537926909" DateHigh="30569684"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Conversion Settings\Factory Conversion Settings.wwu" DateLow="3487608014" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3487608014" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Effects\Default Work Unit.wwu" DateLow="3487608014" DateHigh="30569657"/>
@@ -20,10 +20,10 @@
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="3487608014" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="3487608014" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Effects\Factory McDSP Effects.wwu" DateLow="3487608014" DateHigh="30569657"/>
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Events\Default Work Unit.wwu" DateLow="3487774421" DateHigh="30569657"/>
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Game Parameters\Default Work Unit.wwu" DateLow="3487784327" DateHigh="30569657"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Events\Default Work Unit.wwu" DateLow="537956913" DateHigh="30569684"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Game Parameters\Default Work Unit.wwu" DateLow="538026924" DateHigh="30569684"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="3487784327" DateHigh="30569657"/>
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\ggj2017.Gabriel.wsettings" DateLow="3490613764" DateHigh="30569657"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\ggj2017.Gabriel.wsettings" DateLow="639715237" DateHigh="30569684"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\ggj2017.wproj" DateLow="3282929754" DateHigh="30569658"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3488299316" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3488299316" DateHigh="30569657"/>
@@ -32,7 +32,7 @@
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Presets\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Queries\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Queries\Factory Queries.wwu" DateLow="3490613764" DateHigh="30569657"/>
-	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\SoundBanks\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>
+	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\SoundBanks\Default Work Unit.wwu" DateLow="545327063" DateHigh="30569684"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\States\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>
 	<ValidationCacheItem File="C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\Switches\Default Work Unit.wwu" DateLow="3490613764" DateHigh="30569657"/>

@@ -22,7 +22,7 @@ public class AnimationEventSoundPlayer : MonoBehaviour {
 
     public void addSoundEvent(int animationClipIndex, float when, string playEvent)
     {
-        Debug.Log("Adding Sound Event" + when.ToString() + " " + playEvent);
+        //Debug.Log("Adding Sound Event" + when.ToString() + " " + playEvent);
         Animator anim = gameObject.GetComponent<Animator>();
         if (anim == null)
         {
