@@ -5,6 +5,9 @@ using UnityEngine.Networking;
 
 public class GameManager : NetworkBehaviour {
 
+	public GameObject Alice;
+	public GameObject Bob;
+	public GameObject Slasher;
     public SyncListString players = new SyncListString();
     public SyncListInt spawnIndexes = new SyncListInt();
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
