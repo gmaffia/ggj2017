@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	791019152	emit_wave			\Default Work Unit\emit_wave	
 	1562304622	play_ambient			\Default Work Unit\play_ambient	
+	1840284572	listen_wave			\Default Work Unit\listen_wave	
 	2062355390	player3_step			\Default Work Unit\player3_step	
 	2345449353	player2_step			\Default Work Unit\player2_step	
 	2932040671	play_music			\Default Work Unit\play_music	
 	3235708380	player1_step			\Default Work Unit\player1_step	
-	4186058215	player1_panting			\Default Work Unit\player1_panting	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1675162649	player1_state			\Default Work Unit\player1_state	
@@ -16,9 +17,12 @@ State	ID	Name	State Group			Notes
 	3354824903	isAlice	player1_state			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	2029976456	player1_to_2_distance			\Default Work Unit\player1_to_2_distance	
+	3092056143	player1_to_3_distance			\Default Work Unit\player1_to_3_distance	
 	3472398812	player1_to_slasher_distance			\Default Work Unit\player1_to_slasher_distance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+<<<<<<< Updated upstream
 	49004493	Pasos Player Hombre_10	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_10		32272
 	95293301	Pasos Asesino_6	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_6		23616
 	95697694	Pasos Player Hombre_5	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_5		22978
@@ -66,4 +70,57 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	990805058	Pasos Player Mujer_8	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_8		20628
 	1025407191	Pasos Player Mujer_12	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_12		20430
 	1062305158	Cadenas Asesino Back_1	C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_chains\slasher_chains_back\Cadenas Asesino Back_1		35460
+=======
+	49004493	Pasos Player Hombre_10	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_10		32272
+	95293301	Pasos Asesino_6	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_6		23616
+	95697694	Pasos Player Hombre_5	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_5		22978
+	96620774	Pasos Asesino_8	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_8		19954
+	111363138	Cadenas Asesino Lead_4	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Lead_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chain_leads\slasher_chains_hard\Cadenas Asesino Lead_4		26876
+	116526303	Pasos Player Mujer_5	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_5		21020
+	120774532	Cadenas Asesino Back_3	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chains_back\Cadenas Asesino Back_3		43118
+	145626209	Pasos Player Mujer	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer		26162
+	159033061	Pasos Player Mujer_7	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_7		24960
+	184932833	Pasos Player Hombre_6	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_6		28174
+	200231462	Pasos Player Mujer_11	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_11		21808
+	208202534	Pasos Player Mujer_3	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_3		27520
+	217929582	Radio Wave Emit	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Radio Wave Emit_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\emit_wave\Radio Wave Emit		1456212
+	221113097	Cadenas Asesino Back_2	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chains_back\Cadenas Asesino Back_2		31458
+	237391825	Pasos Asesino_5	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_5		16832
+	245228737	Pasos Asesino_1	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_1		24800
+	251371776	Pasos Player Mujer_13	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_13_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_13		20628
+	294824623	Pasos Player Hombre_2	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_2		25054
+	303309556	Cadenas Asesino Back_4	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chains_back\Cadenas Asesino Back_4		31458
+	323666100	Pasos Player Hombre_7	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_7		27096
+	342481030	Pasos Player Hombre_4	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_4		24500
+	349741933	Pasos Player Mujer_4	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_4		17870
+	355663969	Pasos Asesino	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino		26306
+	358618114	Pasos Player Hombre_3	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_3		24638
+	367477040	Cadenas Asesino Back	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chains_back\Cadenas Asesino Back		47800
+	391818444	Pasos Player Hombre_1	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_1		23254
+	410789929	Pasos Asesino_7	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_7		18878
+	435169856	Pasos Player Mujer_10	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_10		22400
+	445645090	Pasos Player Mujer_14	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_14_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_14		20432
+	446725775	Pasos Player Mujer_9	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_9_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_9		20234
+	450119771	Pasos Player Mujer_6	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_6		25944
+	475120507	Pasos Asesino_2	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_2		31724
+	476261201	Pasos Player Hombre	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre		29066
+	479941954	Cadenas Asesino Lead_1	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Lead_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chain_leads\slasher_chains_soft\Cadenas Asesino Lead_1		17768
+	627632745	Pasos Player Hombre_11	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_11_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_11		29252
+	647639011	Pasos Player Hombre_9	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_9_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_9		24292
+	647886667	Pasos Asesino_4	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_4		25230
+	704947831	Pasos Player Mujer_15	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_15_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_15		20036
+	723164075	Pasos Player Mujer_1	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_1		23124
+	738397765	Slasher Radio Interference	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Slasher Radio Interference_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player_radio_interfernece\player_radio_interference_sfx\Slasher Radio Interference		1495524
+	813067788	Cadenas Asesino Lead_2	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Lead_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chain_leads\slasher_chains_hard\Cadenas Asesino Lead_2		32764
+	837077488	Pasos Player Mujer_2	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_2		24174
+	864916256	Cadenas Asesino Lead_3	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Lead_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chain_leads\slasher_chains_soft\Cadenas Asesino Lead_3		17768
+	866921894	Pasos Asesino_3	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Asesino_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\slasher_step_sfx\slasher_steps\Pasos Asesino_3		21894
+	914466906	Cadenas Asesino Lead	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Lead_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chain_leads\slasher_chains_hard\Cadenas Asesino Lead		31632
+	915568092	Pasos Player Hombre_8	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Hombre_8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\bob_steps_sfx\Pasos Player Hombre_8		27744
+	990805058	Pasos Player Mujer_8	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_8		20628
+	1013488350	Panting	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Panting_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_pantings\alice_panting_sfx\Panting		2575796
+	1025407191	Pasos Player Mujer_12	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Pasos Player Mujer_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\player1_steps\alice_steps_sfx\Pasos Player Mujer_12		20430
+	1062305158	Cadenas Asesino Back_1	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Cadenas Asesino Back_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\slasher_chains\slasher_chains\slasher_chains_back\Cadenas Asesino Back_1		35460
+	1065461361	Radio Wave Listen	Y:\Documents\GitHub Repositories\ggj2017\Wwise\ggj2017\.cache\Mac\SFX\Radio Wave Listen_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\listen_wave\Radio Wave Listen		1389756
+>>>>>>> Stashed changes
 

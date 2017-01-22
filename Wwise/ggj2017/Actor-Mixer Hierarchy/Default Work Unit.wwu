@@ -3,17 +3,21 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{5C587729-E867-4038-9A08-5E6263D3F960}" PersistMode="Standalone">
 			<ChildrenList>
-				<BlendContainer Name="ambient_sfx" ID="{B7EC6A47-DED0-43FB-A70A-4A6F3BECE75F}" ShortID="403987379">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambient" ID="{A36C6D1D-8C28-457C-A856-6ADBB6A34086}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-						</Reference>
-					</ReferenceList>
-				</BlendContainer>
 				<SwitchContainer Name="player1_steps" ID="{7F779D02-EACA-427B-B0FC-AC159D355BE2}" ShortID="1041364394">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -33,265 +37,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="slasher_chains" ID="{DCCE1E0D-B0A1-4A3E-AF29-830B00F3BB4F}" ShortID="939358223">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="slasher_chains_back" ID="{C0EE4E0F-A705-48E7-828D-2C80742C9A5D}" ShortID="55510200">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Cadenas Asesino Back" ID="{AB2B0639-FA88-45DB-BE27-5E0D490F87FF}" ShortID="227211233" Type="SoundFX">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Cadenas Asesino Back" ID="{9BAD5EDC-3B6A-46DC-BE71-EE5DC0EF87A4}" ShortID="367477040">
-															<Language>SFX</Language>
-															<AudioFile>Cadenas Asesino Back.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Cadenas Asesino Back" ID="{9BAD5EDC-3B6A-46DC-BE71-EE5DC0EF87A4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Cadenas Asesino Back_1" ID="{8BE0BDFC-882C-476F-8A5A-037391BBA51F}" ShortID="758084933" Type="SoundFX">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Cadenas Asesino Back_1" ID="{B58889D1-F9DF-45DF-8BC0-4DE6CF098B55}" ShortID="1062305158">
-															<Language>SFX</Language>
-															<AudioFile>Cadenas Asesino Back_1.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Cadenas Asesino Back_1" ID="{B58889D1-F9DF-45DF-8BC0-4DE6CF098B55}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Cadenas Asesino Back_2" ID="{DD295C50-6B62-46A9-9608-FAA04E003674}" ShortID="78588336" Type="SoundFX">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Cadenas Asesino Back_2" ID="{2F1A98A7-E71F-46B8-B643-F4237D7D1A06}" ShortID="221113097">
-															<Language>SFX</Language>
-															<AudioFile>Cadenas Asesino Back_2.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Cadenas Asesino Back_2" ID="{2F1A98A7-E71F-46B8-B643-F4237D7D1A06}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Cadenas Asesino Back_3" ID="{A7195FDE-DD76-4C5D-AF91-EA76B635252B}" ShortID="525411969" Type="SoundFX">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Cadenas Asesino Back_3" ID="{CCA3673B-49A7-4A3F-914C-2AA0A00AAB3E}" ShortID="120774532">
-															<Language>SFX</Language>
-															<AudioFile>Cadenas Asesino Back_3.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Cadenas Asesino Back_3" ID="{CCA3673B-49A7-4A3F-914C-2AA0A00AAB3E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Cadenas Asesino Back_4" ID="{258EC662-877D-48C6-9548-978E90E347EA}" ShortID="801552669" Type="SoundFX">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Cadenas Asesino Back_4" ID="{F2478AF0-2823-4ED3-AC8A-010F74E65D6F}" ShortID="303309556">
-															<Language>SFX</Language>
-															<AudioFile>Cadenas Asesino Back_4.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Cadenas Asesino Back_4" ID="{F2478AF0-2823-4ED3-AC8A-010F74E65D6F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="slasher_chain_leads" ID="{089E7E99-3E06-4DAE-A48B-D59C0CE1AE4D}" ShortID="169101332">
-											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<RandomSequenceContainer Name="slasher_chains_hard" ID="{D23B576D-A3D6-48C5-8B13-48CDBED916BE}" ShortID="570741931">
-													<PropertyList>
-														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Cadenas Asesino Lead" ID="{8011D731-F65A-461E-9CDB-8964D5407A61}" ShortID="164562161" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Cadenas Asesino Lead" ID="{B3F5CB1F-1C8F-4A40-A8D9-BDB1A652923F}" ShortID="914466906">
-																	<Language>SFX</Language>
-																	<AudioFile>Cadenas Asesino Lead.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Cadenas Asesino Lead" ID="{B3F5CB1F-1C8F-4A40-A8D9-BDB1A652923F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Cadenas Asesino Lead_2" ID="{CA623AD5-86FA-4FAF-9544-4CFB87BC08B4}" ShortID="101427464" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Cadenas Asesino Lead_2" ID="{EFCF4277-1372-4183-84AD-5ED600B943E3}" ShortID="813067788">
-																	<Language>SFX</Language>
-																	<AudioFile>Cadenas Asesino Lead_2.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Cadenas Asesino Lead_2" ID="{EFCF4277-1372-4183-84AD-5ED600B943E3}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Cadenas Asesino Lead_4" ID="{5662C019-39C4-4388-900D-F2F3E2A1BBDC}" ShortID="1030158812" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Cadenas Asesino Lead_4" ID="{5DA1CA79-A14F-46B0-8F0B-3A3FA82D041F}" ShortID="111363138">
-																	<Language>SFX</Language>
-																	<AudioFile>Cadenas Asesino Lead_4.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Cadenas Asesino Lead_4" ID="{5DA1CA79-A14F-46B0-8F0B-3A3FA82D041F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="slasher_chains_soft" ID="{EADBDB35-EDA8-4684-A474-5C761A1ECC5D}" ShortID="753683389">
-													<PropertyList>
-														<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Cadenas Asesino Lead_1" ID="{FF0CD889-CC69-4641-9197-FCC4567C8DEF}" ShortID="865199314" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Cadenas Asesino Lead_1" ID="{42EBCA4D-034B-4DF7-BD74-84BA6DA0B3D3}" ShortID="479941954">
-																	<Language>SFX</Language>
-																	<AudioFile>Cadenas Asesino Lead_1.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Cadenas Asesino Lead_1" ID="{42EBCA4D-034B-4DF7-BD74-84BA6DA0B3D3}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Cadenas Asesino Lead_3" ID="{3A266704-2EF7-4D53-AF26-01826BF6DECB}" ShortID="680044465" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Cadenas Asesino Lead_3" ID="{19591C40-8239-459A-A4B9-04BE9B61784F}" ShortID="864916256">
-																	<Language>SFX</Language>
-																	<AudioFile>Cadenas Asesino Lead_3.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Cadenas Asesino Lead_3" ID="{19591C40-8239-459A-A4B9-04BE9B61784F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</BlendContainer>
 								<RandomSequenceContainer Name="slasher_steps" ID="{0D77C99D-9E83-4889-AC52-9477C0F7C40E}" ShortID="80049600">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -301,7 +46,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+											<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -481,6 +226,13 @@
 							</ChildrenList>
 						</BlendContainer>
 						<RandomSequenceContainer Name="alice_steps_sfx" ID="{92E3FCBB-E4CE-4BC1-B958-7E776C3065E6}" ShortID="190640474">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -797,6 +549,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="bob_steps_sfx" ID="{31BD2893-7262-412A-8246-8939001C4CA5}" ShortID="309524047">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -1037,6 +796,14 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{2DDFB0EA-050A-4DB8-BAF3-D783B48A98D4}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="0.400801603206411"/>
+								<Property Name="PanY" Type="Real64" Value="-0.424628450106151"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
 					<GroupingInfo>
 						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
 						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
@@ -1077,13 +844,13 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<RTPCList>
-								<RTPC Name="" ID="{B8B2A965-662D-4B36-A3D3-6EDAEB7CEABD}" ShortID="163462638">
+								<RTPC Name="" ID="{984DB9D0-2F01-48A1-A7D3-EE0CAC38FDCE}" ShortID="625394778">
 									<ReferenceList>
 										<Reference Name="ControlInput">
 											<ObjectRef Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
 										</Reference>
 									</ReferenceList>
-									<Curve Name="" ID="{A3F9054B-4468-48FC-9B45-05458C44CF2E}">
+									<Curve Name="" ID="{B1CEFBE0-835E-4D15-AFAC-7A1C49D8CC46}">
 										<PropertyList>
 											<Property Name="Flags" Type="int32" Value="3"/>
 										</PropertyList>
@@ -1092,11 +859,6 @@
 												<XPos>0</XPos>
 												<YPos>0</YPos>
 												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>50</XPos>
-												<YPos>-200</YPos>
-												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
@@ -1118,32 +880,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="alice_panting" ID="{DB16457D-728C-4F6C-8824-910F0725EB4F}" ShortID="652373598">
-							<PropertyList>
-								<Property Name="BlendBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-								</Reference>
-							</ReferenceList>
-						</BlendContainer>
-						<BlendContainer Name="bob_panting" ID="{099B0E0E-3301-4DB6-986F-C467D8FD0C52}" ShortID="1010934349">
-							<PropertyList>
-								<Property Name="BlendBehavior" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
-								</Reference>
-							</ReferenceList>
-						</BlendContainer>
 						<BlendContainer Name="slasher_panting" ID="{57AF4E9F-20E7-4653-AB8E-0401177F5E58}" ShortID="994526213">
 							<PropertyList>
 								<Property Name="BlendBehavior" Type="int16" Value="1"/>
@@ -1157,16 +893,122 @@
 								</Reference>
 							</ReferenceList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="alice_panting_sfx" ID="{D39FD994-DD5A-4503-B8CB-3374A43AD3F9}" ShortID="49002486">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Panting" ID="{42790A28-7B57-4D2C-B8B3-12638DBEB768}" ShortID="777972491" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Panting" ID="{42B46280-F32B-43FB-8215-C7672EFFEE82}" ShortID="1013488350">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Panting.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Panting" ID="{42B46280-F32B-43FB-8215-C7672EFFEE82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Panting" ID="{42790A28-7B57-4D2C-B8B3-12638DBEB768}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="bob_panting_sfx" ID="{5110AB55-BFAD-4559-84BA-8BC55E06D105}" ShortID="473624555">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Panting" ID="{015F23FD-1675-4753-8188-97025CE256CA}" ShortID="812377879" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Panting" ID="{8EAAF005-3E13-4739-94A7-352703E8CF05}" ShortID="676606136">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Panting.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1013488350"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Panting" ID="{8EAAF005-3E13-4739-94A7-352703E8CF05}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Panting" ID="{015F23FD-1675-4753-8188-97025CE256CA}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
 						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="bob_panting" ID="{099B0E0E-3301-4DB6-986F-C467D8FD0C52}"/>
+								<ItemRef Name="bob_panting_sfx" ID="{5110AB55-BFAD-4559-84BA-8BC55E06D105}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="alice_panting" ID="{DB16457D-728C-4F6C-8824-910F0725EB4F}"/>
+								<ItemRef Name="alice_panting_sfx" ID="{D39FD994-DD5A-4503-B8CB-3374A43AD3F9}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="slasher_panting" ID="{57AF4E9F-20E7-4653-AB8E-0401177F5E58}"/>
@@ -1176,7 +1018,7 @@
 							<Grouping>
 								<SwitchRef Name="isAlice" ID="{13BBF03D-978F-4599-AE7E-CCA8A9190E44}"/>
 								<ItemList>
-									<ItemRef Name="alice_panting" ID="{DB16457D-728C-4F6C-8824-910F0725EB4F}"/>
+									<ItemRef Name="alice_panting_sfx" ID="{D39FD994-DD5A-4503-B8CB-3374A43AD3F9}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -1188,13 +1030,44 @@
 							<Grouping>
 								<SwitchRef Name="isBob" ID="{3B7CE4A7-518B-49AC-A805-5494800046C3}"/>
 								<ItemList>
-									<ItemRef Name="bob_panting" ID="{099B0E0E-3301-4DB6-986F-C467D8FD0C52}"/>
+									<ItemRef Name="bob_panting_sfx" ID="{5110AB55-BFAD-4559-84BA-8BC55E06D105}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="player2_steps" ID="{08B8FDC4-9149-4C52-9B61-550746BD49A3}" ShortID="840808208">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{04C54BD9-EB39-4051-A9DB-5B9C008061F9}" ShortID="118743351">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="player1_to_2_distance" ID="{BB9A58FD-11ED-4DEB-9188-602FE47CA40A}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{D0526F88-8892-4B87-8C2C-70F1E862DDFB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -2359,6 +2232,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C9CF75BD-059C-4BBF-B6FD-8DEB85917D27}"/>
+					</PositioningInfo>
 					<GroupingInfo>
 						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
 						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
@@ -2396,6 +2272,37 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="player3_steps" ID="{50B632DC-79B8-4C57-A201-1A9F778CA634}" ShortID="712662511">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{908D9BE6-72A1-4BCC-BC08-F9818AB07904}" ShortID="314649400">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="player1_to_3_distance" ID="{579D90C4-F92B-4298-BA40-EEA1AB0F3FE7}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{C7DA573D-5848-4C5B-9DA6-968503771C32}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -3560,6 +3467,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{0ED9737A-B8D9-4FD8-8281-80481D9C248D}"/>
+					</PositioningInfo>
 					<GroupingInfo>
 						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
 						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
@@ -3596,6 +3506,546 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<SwitchContainer Name="slasher_chains" ID="{81448DF2-A832-460B-B62F-85987CFD411A}" ShortID="34718959">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{32AFCA55-D9BB-41FA-A5D8-69166B6CBA18}" ShortID="1052305452">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5256D12C-453F-422B-9D43-F58D1D09FFE3}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="slasher_chains" ID="{DCCE1E0D-B0A1-4A3E-AF29-830B00F3BB4F}" ShortID="939358223">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="slasher_chains_back" ID="{C0EE4E0F-A705-48E7-828D-2C80742C9A5D}" ShortID="55510200">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Cadenas Asesino Back" ID="{AB2B0639-FA88-45DB-BE27-5E0D490F87FF}" ShortID="227211233" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cadenas Asesino Back" ID="{9BAD5EDC-3B6A-46DC-BE71-EE5DC0EF87A4}" ShortID="367477040">
+													<Language>SFX</Language>
+													<AudioFile>Cadenas Asesino Back.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cadenas Asesino Back" ID="{9BAD5EDC-3B6A-46DC-BE71-EE5DC0EF87A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cadenas Asesino Back_1" ID="{8BE0BDFC-882C-476F-8A5A-037391BBA51F}" ShortID="758084933" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cadenas Asesino Back_1" ID="{B58889D1-F9DF-45DF-8BC0-4DE6CF098B55}" ShortID="1062305158">
+													<Language>SFX</Language>
+													<AudioFile>Cadenas Asesino Back_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cadenas Asesino Back_1" ID="{B58889D1-F9DF-45DF-8BC0-4DE6CF098B55}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cadenas Asesino Back_2" ID="{DD295C50-6B62-46A9-9608-FAA04E003674}" ShortID="78588336" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cadenas Asesino Back_2" ID="{2F1A98A7-E71F-46B8-B643-F4237D7D1A06}" ShortID="221113097">
+													<Language>SFX</Language>
+													<AudioFile>Cadenas Asesino Back_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cadenas Asesino Back_2" ID="{2F1A98A7-E71F-46B8-B643-F4237D7D1A06}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cadenas Asesino Back_3" ID="{A7195FDE-DD76-4C5D-AF91-EA76B635252B}" ShortID="525411969" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cadenas Asesino Back_3" ID="{CCA3673B-49A7-4A3F-914C-2AA0A00AAB3E}" ShortID="120774532">
+													<Language>SFX</Language>
+													<AudioFile>Cadenas Asesino Back_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cadenas Asesino Back_3" ID="{CCA3673B-49A7-4A3F-914C-2AA0A00AAB3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Cadenas Asesino Back_4" ID="{258EC662-877D-48C6-9548-978E90E347EA}" ShortID="801552669" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cadenas Asesino Back_4" ID="{F2478AF0-2823-4ED3-AC8A-010F74E65D6F}" ShortID="303309556">
+													<Language>SFX</Language>
+													<AudioFile>Cadenas Asesino Back_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cadenas Asesino Back_4" ID="{F2478AF0-2823-4ED3-AC8A-010F74E65D6F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="slasher_chain_leads" ID="{089E7E99-3E06-4DAE-A48B-D59C0CE1AE4D}" ShortID="169101332">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="slasher_chains_hard" ID="{D23B576D-A3D6-48C5-8B13-48CDBED916BE}" ShortID="570741931">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Cadenas Asesino Lead" ID="{8011D731-F65A-461E-9CDB-8964D5407A61}" ShortID="164562161" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Cadenas Asesino Lead" ID="{B3F5CB1F-1C8F-4A40-A8D9-BDB1A652923F}" ShortID="914466906">
+															<Language>SFX</Language>
+															<AudioFile>Cadenas Asesino Lead.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Cadenas Asesino Lead" ID="{B3F5CB1F-1C8F-4A40-A8D9-BDB1A652923F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Cadenas Asesino Lead_2" ID="{CA623AD5-86FA-4FAF-9544-4CFB87BC08B4}" ShortID="101427464" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Cadenas Asesino Lead_2" ID="{EFCF4277-1372-4183-84AD-5ED600B943E3}" ShortID="813067788">
+															<Language>SFX</Language>
+															<AudioFile>Cadenas Asesino Lead_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Cadenas Asesino Lead_2" ID="{EFCF4277-1372-4183-84AD-5ED600B943E3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Cadenas Asesino Lead_4" ID="{5662C019-39C4-4388-900D-F2F3E2A1BBDC}" ShortID="1030158812" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Cadenas Asesino Lead_4" ID="{5DA1CA79-A14F-46B0-8F0B-3A3FA82D041F}" ShortID="111363138">
+															<Language>SFX</Language>
+															<AudioFile>Cadenas Asesino Lead_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Cadenas Asesino Lead_4" ID="{5DA1CA79-A14F-46B0-8F0B-3A3FA82D041F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="slasher_chains_soft" ID="{EADBDB35-EDA8-4684-A474-5C761A1ECC5D}" ShortID="753683389">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Cadenas Asesino Lead_1" ID="{FF0CD889-CC69-4641-9197-FCC4567C8DEF}" ShortID="865199314" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Cadenas Asesino Lead_1" ID="{42EBCA4D-034B-4DF7-BD74-84BA6DA0B3D3}" ShortID="479941954">
+															<Language>SFX</Language>
+															<AudioFile>Cadenas Asesino Lead_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Cadenas Asesino Lead_1" ID="{42EBCA4D-034B-4DF7-BD74-84BA6DA0B3D3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Cadenas Asesino Lead_3" ID="{3A266704-2EF7-4D53-AF26-01826BF6DECB}" ShortID="680044465" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Cadenas Asesino Lead_3" ID="{19591C40-8239-459A-A4B9-04BE9B61784F}" ShortID="864916256">
+															<Language>SFX</Language>
+															<AudioFile>Cadenas Asesino Lead_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Cadenas Asesino Lead_3" ID="{19591C40-8239-459A-A4B9-04BE9B61784F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="slasher_chains_hard" ID="{D23B576D-A3D6-48C5-8B13-48CDBED916BE}"/>
+										<ItemRef Name="slasher_chains_soft" ID="{EADBDB35-EDA8-4684-A474-5C761A1ECC5D}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{4B1ED68D-3D34-4045-8E7D-8E498971E12E}"/>
+					</PositioningInfo>
+					<GroupingInfo>
+						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
+						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="slasher_chains" ID="{DCCE1E0D-B0A1-4A3E-AF29-830B00F3BB4F}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="isSlasher" ID="{02049844-CC48-4F5F-B1D9-318306BFD19C}"/>
+								<ItemList>
+									<ItemRef Name="slasher_chains" ID="{DCCE1E0D-B0A1-4A3E-AF29-830B00F3BB4F}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<BlendContainer Name="ambient_sfx" ID="{B7EC6A47-DED0-43FB-A70A-4A6F3BECE75F}" ShortID="403987379">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambient" ID="{A36C6D1D-8C28-457C-A856-6ADBB6A34086}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="ambient_sfxs" ID="{3F2D6A0B-C70F-462F-969D-920F22E7E921}" ShortID="904622490">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<SwitchContainer Name="player_radio_interfernece" ID="{30922919-BC45-45B1-9F37-0EF0949EB33D}" ShortID="917981565">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{F2AF0968-E2CB-4EA9-9C5A-A53EF5500B20}" ShortID="446613511">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0A84CBE3-8761-45E2-8F57-4BEDCB55CD35}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="player_radio_interference_sfx" ID="{D1BDD8F4-8C58-494A-8279-ED6FA38E4CD7}" ShortID="902263515">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Slasher Radio Interference" ID="{9421D83E-5A78-469B-84AD-91745C9C80F9}" ShortID="111275795" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Slasher Radio Interference" ID="{B221C812-47F7-468A-9604-6C8230F392FC}" ShortID="738397765">
+											<Language>SFX</Language>
+											<AudioFile>Slasher Radio Interference.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Slasher Radio Interference" ID="{B221C812-47F7-468A-9604-6C8230F392FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Slasher Radio Interference" ID="{9421D83E-5A78-469B-84AD-91745C9C80F9}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="player1_state" ID="{8679402D-05C1-4740-8CE3-D6C93FD75FBB}"/>
+						<DefaultSwitchRef Name="None" ID="{9781F544-3062-4F17-AE6E-91754597725D}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="player_radio_interference_sfx" ID="{D1BDD8F4-8C58-494A-8279-ED6FA38E4CD7}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="isAlice" ID="{13BBF03D-978F-4599-AE7E-CCA8A9190E44}"/>
+								<ItemList>
+									<ItemRef Name="player_radio_interference_sfx" ID="{D1BDD8F4-8C58-494A-8279-ED6FA38E4CD7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="isBob" ID="{3B7CE4A7-518B-49AC-A805-5494800046C3}"/>
+								<ItemList>
+									<ItemRef Name="player_radio_interference_sfx" ID="{D1BDD8F4-8C58-494A-8279-ED6FA38E4CD7}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<BlendContainer Name="listen_wave" ID="{10FFA653-B52B-4DCB-9C7F-A8E479A13DA1}" ShortID="630030495">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Radio Wave Listen" ID="{B4906ED2-B412-4D29-A6FA-95EC8EC26251}" ShortID="1058021538" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Radio Wave Listen" ID="{B1FB9221-DEBA-41D5-84D6-7FA5814A0ABD}" ShortID="1065461361">
+									<Language>SFX</Language>
+									<AudioFile>Radio Wave Listen.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Radio Wave Listen" ID="{B1FB9221-DEBA-41D5-84D6-7FA5814A0ABD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{6C2702CF-EAC1-42A0-A6B2-AE3243E57310}"/>
+					</PositioningInfo>
+				</BlendContainer>
+				<BlendContainer Name="emit_wave" ID="{66D52A4E-867C-4D48-9A85-749D6A1E5ACA}" ShortID="144866979">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Radio Wave Emit" ID="{8614BAF1-E3AB-46AA-A5C3-2E8400FC2F8C}" ShortID="335938292" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Radio Wave Emit" ID="{6409D5BC-04B6-4B4B-A138-5110352EC0EF}" ShortID="217929582">
+									<Language>SFX</Language>
+									<AudioFile>Radio Wave Emit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Radio Wave Emit" ID="{6409D5BC-04B6-4B4B-A138-5110352EC0EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{EC2F8690-0FF1-4C7D-BD56-8E81B3E600AE}"/>
+					</PositioningInfo>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

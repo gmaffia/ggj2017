@@ -6,10 +6,11 @@
 				<SoundBank Name="Main" ID="{6ECF4FB4-6346-4030-8EB2-63A01042A2E5}">
 					<ObjectInclusionList>
 						<ObjectRef Name="player1_step" ID="{14BA9102-BCAC-401E-A24B-234E254A64D5}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="emit_wave" ID="{5F95A686-55BA-424E-9144-4B4319EAC4AE}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="play_music" ID="{2538B66E-CB5E-49E7-9B5E-59001B3BC310}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="listen_wave" ID="{EC1256D1-5D06-4ABC-9B00-D8D1C7042771}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="play_ambient" ID="{DE37C928-0433-4B2E-9C38-C917481C834C}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player3_step" ID="{A399C308-CB96-4D63-AF1B-E31D06752A32}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="player1_panting" ID="{D34A7F09-5634-4D77-9C7F-BDA362531ADA}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player2_step" ID="{07F59E20-D82E-4DBA-AF1D-D1C78D7667E4}" WorkUnitID="{C27A8144-3D95-4344-9AB4-B8469F24F61F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
