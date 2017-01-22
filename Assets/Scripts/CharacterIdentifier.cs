@@ -94,7 +94,6 @@ public class CharacterIdentifier : NetworkBehaviour
             SyncListString roster = FindObjectOfType<GameManager>().players;
             lastSet++;
             AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + playerId);
-            GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
             if (animationSoundPlayer != null)
             {
                 for (int i = 0; i < animationClips.Length; i++)
