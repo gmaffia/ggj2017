@@ -16,12 +16,13 @@ public class PlayerController : NetworkBehaviour
 
 	// Use this for initialization
 	void Start () {
+		charAnimator = GetComponent<Animator> ();
 		sprite = GetComponent<SpriteRenderer> ();
 		rBody = GetComponent<Rigidbody2D> ();
         if (isServer)
         {
             CmdJoinPlayer();
-            RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
+            //RpcSetSpawnPoint(GetComponent<CharacterIdentifier>().playerId);
         }
 
         if(isLocalPlayer)
@@ -29,19 +30,6 @@ public class PlayerController : NetworkBehaviour
             //GetComponent<SpriteRenderer>().material.color = Color.blue;
             FindObjectOfType<GameManager>().currentPlayer = GetComponent<CharacterIdentifier>().playerId;
         }
-
-		charAnimator = GetComponent<Animator> ();
-		switch (FindObjectOfType<GameManager> ().currentPlayer) {
-			case ("Alice"):
-				charAnimator.SetTrigger("Alice");
-			break;
-			case ("Bob"):
-				charAnimator.SetTrigger("Bob");
-			break;
-			case ("Slasher"):
-				charAnimator.SetTrigger("Slasher");
-			break;
-		}
     }
 
 	void FixedUpdate(){
