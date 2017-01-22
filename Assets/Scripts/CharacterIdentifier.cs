@@ -22,8 +22,6 @@ public class CharacterIdentifier : NetworkBehaviour
         }
         
         Animator charAnimator = GetComponent<Animator> ();
-        //FindObjectOfType<GameManager> ().currentPlayer
-        //FindObjectOfType<GameManager> ().currentPlayer
         int[] animationClips = new int[3];
         switch (playerId)
         {
@@ -54,9 +52,7 @@ public class CharacterIdentifier : NetworkBehaviour
             {
                 Debug.Log("Locally, the player is " + playerId);
                 lastSet++;
-                setSounds(animationClips, lastSet, playerId);
-                GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
-                AkSoundEngine.PostEvent("play_ambient", soundBank);
+                setSounds(animationClips, lastSet, playerId);                
             }
             
            
@@ -115,7 +111,7 @@ public class CharacterIdentifier : NetworkBehaviour
     {
         AnimationEventSoundPlayer animationSoundPlayer = gameObject.GetComponentInChildren<AnimationEventSoundPlayer>();
         GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
-        Debug.Log("Setting sounds for player# " + lastSet.ToString() + " which is " + playerId);
+        Debug.Log("Setting sounds for player # " + lastSet.ToString() + " which is " + playerId);
         AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + playerId);
 
         if (animationSoundPlayer != null)
@@ -129,5 +125,9 @@ public class CharacterIdentifier : NetworkBehaviour
             }
         }
 
+        if (lastSet == 1)
+        {
+            AkSoundEngine.PostEvent("play_ambient", soundBank);
+        }
     }
 }
