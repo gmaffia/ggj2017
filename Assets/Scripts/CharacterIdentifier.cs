@@ -65,6 +65,8 @@ public class CharacterIdentifier : NetworkBehaviour
         base.OnStartClient();
         Debug.Log("Old->>>" + playerId);       
 		UpdateCharacterSkin ();
+        Debug.Log("Current Player roster");
+        FindObjectOfType<GameManager>().printPlayers();
     }
 
 	public void UpdateCharacterSkin(){

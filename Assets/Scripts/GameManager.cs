@@ -5,24 +5,30 @@ using UnityEngine.Networking;
 
 public class GameManager : NetworkBehaviour {
 
-	public GameObject Alice;
-	public GameObject Bob;
-	public GameObject Slasher;
+    public GameObject Alice;
+    public GameObject Bob;
+    public GameObject Slasher;
     public SyncListString players = new SyncListString();
     public SyncListInt spawnIndexes = new SyncListInt();
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
     public string currentPlayer = null;
 
-    void Start ()
-    {
-        Debug.Log("Running this shit");
+    void Start()
+    {        
         GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
         AkSoundEngine.PostEvent("play_music", soundBank);
     }
 
+    public void printPlayers()
+    {
+        for(int i = 0;  i < players.Count; i++)
+        {
+            Debug.Log("Player " + i + " -> " + players[i]);
+        }
+    }
+
     public string registerPlayer()
     {
-        Debug.Log("Registering player");
         string playerId = availablePlayers[players.Count];
         players.Add(playerId);
         return playerId;
