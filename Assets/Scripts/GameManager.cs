@@ -10,6 +10,13 @@ public class GameManager : NetworkBehaviour {
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
     public string currentPlayer = null;
 
+    void Start ()
+    {
+        Debug.Log("Running this shit");
+        GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
+        AkSoundEngine.PostEvent("play_music", soundBank);
+    }
+
     public string registerPlayer()
     {
         Debug.Log("Registering player");

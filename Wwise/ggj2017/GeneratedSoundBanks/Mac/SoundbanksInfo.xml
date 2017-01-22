@@ -80,7 +80,7 @@
 				</File>
 				<File Id="217929582" Language="SFX">
 					<ShortName>Radio Wave Emit.wav</ShortName>
-					<Path>SFX/Radio Wave Emit_9E69E797.wem</Path>
+					<Path>SFX\Radio Wave Emit_9E69E797.wem</Path>
 				</File>
 				<File Id="221113097" Language="SFX">
 					<ShortName>Cadenas Asesino Back_2.wav</ShortName>
@@ -188,7 +188,7 @@
 				</File>
 				<File Id="738397765" Language="SFX">
 					<ShortName>Slasher Radio Interference.wav</ShortName>
-					<Path>SFX/Slasher Radio Interference_9E69E797.wem</Path>
+					<Path>SFX\Slasher Radio Interference_9E69E797.wem</Path>
 				</File>
 				<File Id="813067788" Language="SFX">
 					<ShortName>Cadenas Asesino Lead_2.wav</ShortName>
@@ -220,7 +220,7 @@
 				</File>
 				<File Id="1013488350" Language="SFX">
 					<ShortName>Panting.wav</ShortName>
-					<Path>SFX/Panting_9E69E797.wem</Path>
+					<Path>SFX\Panting_9E69E797.wem</Path>
 				</File>
 				<File Id="1025407191" Language="SFX">
 					<ShortName>Pasos Player Mujer_12.wav</ShortName>
@@ -232,7 +232,7 @@
 				</File>
 				<File Id="1065461361" Language="SFX">
 					<ShortName>Radio Wave Listen.wav</ShortName>
-					<Path>SFX/Radio Wave Listen_9E69E797.wem</Path>
+					<Path>SFX\Radio Wave Listen_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
