@@ -8,8 +8,16 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="player1_to_3_distance" ID="{579D90C4-F92B-4298-BA40-EEA1AB0F3FE7}"/>
-				<GameParameter Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}"/>
+				<GameParameter Name="player1_to_3_distance" ID="{579D90C4-F92B-4298-BA40-EEA1AB0F3FE7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

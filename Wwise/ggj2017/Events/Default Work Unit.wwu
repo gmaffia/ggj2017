@@ -23,6 +23,20 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Play" ID="{C18C9AA0-5465-4E99-A13E-9D2DA66A8C28}" ShortID="968812068" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B5704F0B-BD20-4973-9C67-A1121FEAD764}" Global="false">
+									<ObjectRef Name="player_radio_interfernece" ID="{30922919-BC45-45B1-9F37-0EF0949EB33D}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{5125A23A-EA05-4963-BA6C-049025B0E6FE}" ShortID="669674255" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8A534C33-F61E-473B-A274-D5C48430C76A}" Global="false">
+									<ObjectRef Name="player1_pantings" ID="{208ADB17-F482-49E6-8C40-B78B3C094F91}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="player1_step" ID="{14BA9102-BCAC-401E-A24B-234E254A64D5}">
@@ -31,6 +45,13 @@
 							<ElementList>
 								<Element ID="{E90A791A-C47B-4F4B-B0B4-F73793E01C80}" Global="false">
 									<ObjectRef Name="player1_steps" ID="{7F779D02-EACA-427B-B0FC-AC159D355BE2}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{FF07D75F-ABD8-4420-A369-82641D29F9AF}" ShortID="108029926" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0B93B9AA-4BF3-4536-9429-9D4711F42F75}" Global="false">
+									<ObjectRef Name="slasher_chains" ID="{81448DF2-A832-460B-B62F-85987CFD411A}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -45,6 +66,13 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Play" ID="{F0777662-2139-464A-8D3D-06F6B19ABDE8}" ShortID="895321196" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{69E8CB64-A6F3-4C5C-BC2E-83C423AD4022}" Global="false">
+									<ObjectRef Name="slasher_chains" ID="{81448DF2-A832-460B-B62F-85987CFD411A}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="player3_step" ID="{A399C308-CB96-4D63-AF1B-E31D06752A32}">
@@ -56,14 +84,32 @@
 								</Element>
 							</ElementList>
 						</Action>
+						<Action Name="Play" ID="{D0A7783D-5199-4124-9933-F58BF0A81DA4}" ShortID="198265750" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C155489E-B7E7-442C-B74C-A4112747E9E4}" Global="false">
+									<ObjectRef Name="slasher_chains" ID="{81448DF2-A832-460B-B62F-85987CFD411A}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="player1_panting" ID="{D34A7F09-5634-4D77-9C7F-BDA362531ADA}">
+				<Event Name="emit_wave" ID="{5F95A686-55BA-424E-9144-4B4319EAC4AE}">
 					<ChildrenList>
-						<Action Name="Play" ID="{97465E31-2F0E-4F95-9C8D-681F0D2E6832}" ShortID="97130977" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{3C7C69E5-0198-4FFC-B1A9-6E8C859EDBAA}" ShortID="805798239" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{E7BA4F05-B8B0-4E7D-AE14-6D1078B516B8}" Global="false">
-									<ObjectRef Name="player1_pantings" ID="{208ADB17-F482-49E6-8C40-B78B3C094F91}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								<Element ID="{0ACA006E-7F7E-4237-A7B2-0E6210D0F449}" Global="false">
+									<ObjectRef Name="emit_wave" ID="{66D52A4E-867C-4D48-9A85-749D6A1E5ACA}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="listen_wave" ID="{EC1256D1-5D06-4ABC-9B00-D8D1C7042771}">
+					<ChildrenList>
+						<Action Name="Play" ID="{24B2670A-545B-43DE-9F0A-38B940C0F106}" ShortID="740997945" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1633F488-2614-4B99-92A7-388FEBA56875}" Global="false">
+									<ObjectRef Name="listen_wave" ID="{10FFA653-B52B-4DCB-9C7F-A8E479A13DA1}" WorkUnitID="{5C587729-E867-4038-9A08-5E6263D3F960}"/>
 								</Element>
 							</ElementList>
 						</Action>
