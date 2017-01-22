@@ -33,24 +33,22 @@ public class PlayerController : NetworkBehaviour
 		charAnimator = GetComponent<Animator> ();
 		switch (FindObjectOfType<GameManager> ().currentPlayer) {
 			case ("Alice"):
-				charAnimator.SetBool("Alice",true);
+				charAnimator.SetTrigger("Alice");
 			break;
 			case ("Bob"):
-				charAnimator.SetBool("Bob",true);
+				charAnimator.SetTrigger("Bob");
 			break;
 			case ("Slasher"):
-				charAnimator.SetBool("Slasher",true);
+				charAnimator.SetTrigger("Slasher");
 			break;
 		}
     }
 
 	void FixedUpdate(){
-
         if (!isLocalPlayer)
         {
             return;
         }
-
         float x = Input.GetAxis("Horizontal") * Time.deltaTime * this.velocity;
 		float y = Input.GetAxis("Vertical") * Time.deltaTime * this.velocity;
 		rBody.MovePosition (rBody.position + new Vector2(x, y));
@@ -91,6 +89,10 @@ public class PlayerController : NetworkBehaviour
 		} else {
 			if (transform.position.x != lastPostion.x) {
 				//Moving H
+				charAnimator.SetBool ("Walking", true);
+				charAnimator.SetBool ("FacingSide",true);
+				charAnimator.SetBool ("FacingFront",false);
+				charAnimator.SetBool ("FacingBack",false);
 				if (transform.position.x > lastPostion.x) {
 					sprite.flipX = true;
 					//Moving left
@@ -100,14 +102,20 @@ public class PlayerController : NetworkBehaviour
 					//MovingRight
 				}
 			} else {
-				if (transform.position.y != lastPostion.y) {
-					sprite.flipX = false;
+				if (transform.position.y != lastPostion.y) {					
 					//Moving V
+					sprite.flipX = false;
+					charAnimator.SetBool ("FacingSide", false);
+					charAnimator.SetBool ("Walking", true);
 					if (transform.position.y > lastPostion.y) {
 						//Moving Up
+						charAnimator.SetBool ("FacingFront", false);
+						charAnimator.SetBool ("FacingBack", true);
 					}
 					if (transform.position.y < lastPostion.y) {
 						//Moving Down
+						charAnimator.SetBool ("FacingFront", true);
+						charAnimator.SetBool ("FacingBack", false);
 					}
 				} else {
 					//Not Moving
@@ -122,7 +130,14 @@ public class PlayerController : NetworkBehaviour
         {
             CmdDisclosePosition();
         }
+		if (isServer) {
+			checkWinConditions ();
+		}
     }
+
+	void checkWinConditions(){
+
+	}
 
     [Command]
     void CmdDisclosePosition()
