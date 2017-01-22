@@ -26,14 +26,17 @@ public class CharacterIdentifier : NetworkBehaviour
         {
             case ("Alice"):
                 charAnimator.SetTrigger("Alice");
+				tag = "Alice";
                 animationClips = new int[] { 1, 3, 5 };
                 break;
             case ("Bob"):
                 charAnimator.SetTrigger("Bob");
+				tag = "Bob";
                 animationClips = new int[] { 8, 10, 12 };
                 break;
             case ("Slasher"):
                 charAnimator.SetTrigger("Slasher");
+				tag = "Slasher";
                 animationClips = new int[] { 13, 15, 17 };
                 break;
         }
@@ -58,20 +61,27 @@ public class CharacterIdentifier : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
-        Debug.Log("Old->>>" + playerId);
-        Animator charAnimator = GetComponent<Animator>();
-        //FindObjectOfType<GameManager> ().currentPlayer
-        switch (playerId)
-        {
-            case ("Alice"):
-                charAnimator.SetTrigger("Alice");
-                break;
-            case ("Bob"):
-                charAnimator.SetTrigger("Bob");
-                break;
-            case ("Slasher"):
-                charAnimator.SetTrigger("Slasher");
-                break;
-        }
+        Debug.Log("Old->>>" + playerId);       
+		UpdateCharacterSkin ();
     }
+
+	public void UpdateCharacterSkin(){
+		Animator charAnimator = GetComponent<Animator>();
+
+		switch (playerId)
+		{
+		case ("Alice"):
+			charAnimator.SetTrigger("Alice");
+			tag = "Alice";
+			break;
+		case ("Bob"):
+			charAnimator.SetTrigger("Bob");
+			tag = "Bob";
+			break;
+		case ("Slasher"):
+			charAnimator.SetTrigger("Slasher");
+			tag = "Slasher";
+			break;
+		}
+	}
 }

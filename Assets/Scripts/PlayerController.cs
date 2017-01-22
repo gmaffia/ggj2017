@@ -13,9 +13,10 @@ public class PlayerController : NetworkBehaviour
 	private Rigidbody2D rBody;
 
 	private Animator charAnimator;
-
+	private GameManager gameManager;
 	// Use this for initialization
 	void Start () {
+		gameManager = FindObjectOfType<GameManager> ();
 		charAnimator = GetComponent<Animator> ();
 		sprite = GetComponent<SpriteRenderer> ();
 		rBody = GetComponent<Rigidbody2D> ();
@@ -119,12 +120,30 @@ public class PlayerController : NetworkBehaviour
             CmdDisclosePosition();
         }
 		if (isServer) {
-			checkWinConditions ();
+			//checkWinConditions ();
 		}
+	
     }
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (isServer) {
+			Debug.Log ("Touched?? "+ coll.gameObject.tag);
+			string id = coll.gameObject.tag;
+			switch(id){
+				case ("Alice"):
+					Debug.Log ("Touched Alice");
+					break;
+				case ("Bob"):
+					Debug.Log ("Touched Bob");
+					break;
+				case ("Slasher"):
+					Debug.Log ("Touched Slasher");
+					break;
+			}
+		}
 
+	}
 	void checkWinConditions(){
-
+		
 	}
 
     [Command]

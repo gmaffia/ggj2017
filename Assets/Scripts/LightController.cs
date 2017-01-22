@@ -33,9 +33,9 @@ public class LightController : NetworkBehaviour
 			}
 			if (BigRadiusCounter > 0) {
 				BigRadiusCounter -= Time.deltaTime;
-				light.localScale = Vector3.Lerp( light.localScale, BigRadius * new Vector3(1,1,0.1f), Time.deltaTime);
+				light.localScale = Vector3.Lerp( light.localScale, BigRadius * new Vector3(1,1,0.1f), 0.03f);
 			} else {
-				light.localScale = Vector3.Lerp( light.localScale, SmallRadius * new Vector3(1,1,0.1f), Time.deltaTime);
+				light.localScale = Vector3.Lerp( light.localScale, SmallRadius * new Vector3(1,1,0.1f), 0.03f);
 			}
 
 		}
