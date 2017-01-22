@@ -126,26 +126,21 @@ public class PlayerController : NetworkBehaviour
     }
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (isServer) {
-			Debug.Log ("Touched?? "+ coll.gameObject.tag);
-			string id = coll.gameObject.tag;
-			switch(id){
-				case ("Alice"):
-					Debug.Log ("Touched Alice");
-					break;
-				case ("Bob"):
-					Debug.Log ("Touched Bob");
-					break;
-				case ("Slasher"):
-					Debug.Log ("Touched Slasher");
-					break;
+			string collidedTo = coll.gameObject.tag;
+			if (tag == "Alice" || tag == "Bob") {
+				if (collidedTo == "Alice" || collidedTo == "Bob") {
+					FindObjectOfType<GameManager> ().RpcHeroesWin ();
+					Debug.Log ("Heroes Win");
+				}
+			}
+			if (tag == "Slasher") {
+				if (collidedTo == "Alice" || collidedTo == "Bob") {
+					FindObjectOfType<GameManager> ().RpcSlasherWin ();
+				}
 			}
 		}
 
 	}
-	void checkWinConditions(){
-		
-	}
-
     [Command]
     void CmdDisclosePosition()
     {

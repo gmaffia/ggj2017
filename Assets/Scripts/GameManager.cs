@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using UnityEngine.SceneManagement;
 public class GameManager : NetworkBehaviour {
 
     public GameObject Alice;
@@ -12,6 +12,10 @@ public class GameManager : NetworkBehaviour {
     public SyncListInt spawnIndexes = new SyncListInt();
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
     public string currentPlayer = null;
+
+	public string HeroScene;
+	public string SlasherScene;
+
 
     void Start()
     {        
@@ -26,6 +30,7 @@ public class GameManager : NetworkBehaviour {
             Debug.Log("Player " + i + " -> " + players[i]);
         }
     }
+
 
     public string registerPlayer()
     {
@@ -60,8 +65,13 @@ public class GameManager : NetworkBehaviour {
             GameObject spawnPoint = GameObject.FindGameObjectWithTag("SlasherSpawnPoint");
             toReturn = spawnPoint;
         }
-
-
         return toReturn;
     }
+
+	public void RpcHeroesWin(){
+		FindObjectOfType<CustomNetworkManager> ().ServerChangeScene (HeroScene);
+	}
+	public void RpcSlasherWin(){
+		FindObjectOfType<CustomNetworkManager> ().ServerChangeScene (SlasherScene);
+	}
 }
