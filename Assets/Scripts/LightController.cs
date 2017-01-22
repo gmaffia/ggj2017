@@ -20,17 +20,16 @@ public class LightController : NetworkBehaviour
 			light.gameObject.SetActive (true);
 		}
 	}
-	
+	public void grow(){
+		BigRadiusCounter = BigRadiusDuration;
+	}
 	// Update is called once per frame
 	void Update () {
 		if(isLocalPlayer)
 		{
 			light.localScale +=  new Vector3(1,1,0.1f) * Mathf.Sin ( Time.time * RadiusFlickerSpeed ) * RadiusFlickerRange;
 
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				BigRadiusCounter = BigRadiusDuration;
-			}
+
 			if (BigRadiusCounter > 0) {
 				BigRadiusCounter -= Time.deltaTime;
 				light.localScale = Vector3.Lerp( light.localScale, BigRadius * new Vector3(1,1,0.1f), 0.03f);
