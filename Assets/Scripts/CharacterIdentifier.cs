@@ -10,6 +10,7 @@ public class CharacterIdentifier : NetworkBehaviour
     public string playerId;
 
     public int lastSet = 0;
+    public string[] players = new string[3];
 
 	void OnCharChange(string newPlayerId){
 		Debug.Log ("->>>"+newPlayerId);
@@ -43,46 +44,29 @@ public class CharacterIdentifier : NetworkBehaviour
                 break;
         }
 
-        AnimationEventSoundPlayer animationSoundPlayer = gameObject.GetComponentInChildren<AnimationEventSoundPlayer>();
-        GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
         if (isLocalPlayer)
-        {            
-            Debug.Log("Animation event player?" + animationSoundPlayer.ToString());
-            Debug.Log("Locally, the player is " + playerId);
-            lastSet++;
-            AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + playerId);            
-            AkSoundEngine.PostEvent("play_ambient", soundBank);
-
-            if (animationSoundPlayer != null)
-            {
-                for (int i = 0; i < animationClips.Length; i++)
-                {
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.2f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.5f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.8f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 1.0f, "player" + lastSet.ToString() + "_step");
-                }
-            }
-
-            // Are there players that are here before me?
+        {
+            Debug.Log("The current roster is");
+            FindObjectOfType<GameManager>().printPlayers();
             SyncListString roster = FindObjectOfType<GameManager>().players;
-            for(int i = 0; i < roster.Count; i++)
+
+            if (roster.Count == 1 && roster.Contains(playerId))
             {
-                Debug.Log("Adding sounds for Already logged in player " + roster[i]);
+                Debug.Log("Locally, the player is " + playerId);
+                lastSet++;
+                setSounds(animationClips, lastSet, playerId);
+                GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
+                AkSoundEngine.PostEvent("play_ambient", soundBank);
+            }
+            
+           
+            for(int i = 0; i < roster.Count; i++)
+            {                
                 if(roster[i] != playerId)
                 {
+                    Debug.Log("Adding sounds for Already logged in player " + roster[i]);
                     lastSet++;
-                    AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + roster[i]);                    
-                    if (animationSoundPlayer != null)
-                    {
-                        for (int j = 0; j < animationClips.Length; j++)
-                        {
-                            animationSoundPlayer.addSoundEvent(animationClips[i], 0.2f, "player" + lastSet.ToString() + "_step");
-                            animationSoundPlayer.addSoundEvent(animationClips[i], 0.5f, "player" + lastSet.ToString() + "_step");
-                            animationSoundPlayer.addSoundEvent(animationClips[i], 0.8f, "player" + lastSet.ToString() + "_step");
-                            animationSoundPlayer.addSoundEvent(animationClips[i], 1.0f, "player" + lastSet.ToString() + "_step");
-                        }
-                    }
+                    setSounds(animationClips, lastSet, playerId);
                 }
             }
         }
@@ -93,18 +77,7 @@ public class CharacterIdentifier : NetworkBehaviour
             FindObjectOfType<GameManager>().printPlayers();
             SyncListString roster = FindObjectOfType<GameManager>().players;
             lastSet++;
-            AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + playerId);
-            if (animationSoundPlayer != null)
-            {
-                for (int i = 0; i < animationClips.Length; i++)
-                {
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.2f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.5f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 0.8f, "player" + lastSet.ToString() + "_step");
-                    animationSoundPlayer.addSoundEvent(animationClips[i], 1.0f, "player" + lastSet.ToString() + "_step");
-                }
-            }
-
+            setSounds(animationClips, lastSet, playerId);
         }
     }
 
@@ -137,4 +110,24 @@ public class CharacterIdentifier : NetworkBehaviour
 			break;
 		}
 	}
+
+    private void setSounds(int[] animationClips, int lastSet, string playerId)
+    {
+        AnimationEventSoundPlayer animationSoundPlayer = gameObject.GetComponentInChildren<AnimationEventSoundPlayer>();
+        GameObject soundBank = GameObject.Find("WwiseGlobal").GetComponent<AkBank>().gameObject;
+        Debug.Log("Setting sounds for player# " + lastSet.ToString() + " which is " + playerId);
+        AkSoundEngine.SetState("player" + lastSet.ToString() + "_state", "is" + playerId);
+
+        if (animationSoundPlayer != null)
+        {
+            for (int i = 0; i < animationClips.Length; i++)
+            {
+                animationSoundPlayer.addSoundEvent(animationClips[i], 0.2f, "player" + lastSet.ToString() + "_step");
+                animationSoundPlayer.addSoundEvent(animationClips[i], 0.5f, "player" + lastSet.ToString() + "_step");
+                animationSoundPlayer.addSoundEvent(animationClips[i], 0.8f, "player" + lastSet.ToString() + "_step");
+                animationSoundPlayer.addSoundEvent(animationClips[i], 1.0f, "player" + lastSet.ToString() + "_step");
+            }
+        }
+
+    }
 }
