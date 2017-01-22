@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{E46CE294-7BDB-4A8C-9D3A-0B9E19436B1D}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="music_full" ID="{44AFDE5E-4EF0-43D2-90A5-5ADD09195E2C}" ShortID="844138966">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="85"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
@@ -51,6 +54,76 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+						<MusicSegment Name="GGJ 17 Music" ID="{E390F614-54A8-4EEE-B152-AEA23C9DF20F}" ShortID="745522489">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="44906.3153005924"/>
+								<Property Name="GridOffsetCustom" Type="Real64" Value="100"/>
+								<Property Name="Tempo" Type="Real64" Value="85"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="GGJ 17 Music" ID="{B6127A92-E1E6-407E-9233-3F2632C54475}" ShortID="1001932322">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GGJ 17 Music" ID="{FF1B0866-A60B-4556-81F0-3762E9E9289B}" ShortID="281167809">
+											<Language>SFX</Language>
+											<AudioFile>GGJ 17 Music.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{73E63B0D-64F3-4B76-B18B-1B68AAA71C22}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CAB61C25-8303-4E13-AA7B-E2D2D6877554}">
+											<ClipList>
+												<MusicClip Name="GGJ 17 Music" ID="{4AE19A24-98C9-437F-8A1C-B530B90A278A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="43058.820861678"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="GGJ 17 Music" ID="{FF1B0866-A60B-4556-81F0-3762E9E9289B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{F86084DE-9EA1-4898-BD48-D07F06D73030}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="627.450941518077"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{AB9C6259-2D89-4C64-B1BF-73101AD1F0D8}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="43058.8208616781"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{209F0EB6-929E-44F0-A532-CB7CD6246D3A}">
@@ -66,7 +139,11 @@
 						</MusicTransition>
 					</TransitionList>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{C0BA9588-55DB-4935-AA4A-3D7323080C23}" ShortID="957453433"/>
+						<MusicPlaylistItem Name="" ID="{C0BA9588-55DB-4935-AA4A-3D7323080C23}" ShortID="957453433">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
 			</ChildrenList>

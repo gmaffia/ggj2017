@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{AB0C5A55-4425-4398-B412-77E2BCDB5367}" ShortID="414269656" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{58784457-FDA9-40C7-B379-8AA00534D7C8}" Global="false">
-									<ObjectRef Name="music_full" ID="{44AFDE5E-4EF0-43D2-90A5-5ADD09195E2C}" WorkUnitID="{E46CE294-7BDB-4A8C-9D3A-0B9E19436B1D}"/>
+									<ObjectRef Name="GGJ 17 Music" ID="{E390F614-54A8-4EEE-B152-AEA23C9DF20F}" WorkUnitID="{E46CE294-7BDB-4A8C-9D3A-0B9E19436B1D}"/>
 								</Element>
 							</ElementList>
 						</Action>
