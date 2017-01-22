@@ -115,7 +115,7 @@ public class PlayerController : NetworkBehaviour
 	// Update is called once per frame
 	void Update () {
 		Animate ();
-		if (isLocalPlayer && Input.GetKeyDown(KeyCode.Space))
+		if (isLocalPlayer && (tag == "Alice" || tag == "Bob") && Input.GetKeyDown(KeyCode.Space))
         {
             CmdDisclosePosition();
         }
@@ -147,11 +147,11 @@ public class PlayerController : NetworkBehaviour
         // Spawn a sprite on current location
         GameObject marker = (GameObject)Instantiate(
             markerPrefab,
-            transform.position,
+			transform.position + Vector3.forward*-2f,
             transform.rotation
         );
 
-        marker.GetComponent<CharacterIdentifier>().playerId = GetComponent<CharacterIdentifier>().playerId;
+        //marker.GetComponent<CharacterIdentifier>().playerId = GetComponent<CharacterIdentifier>().playerId;
 
         NetworkServer.Spawn(marker);
 
