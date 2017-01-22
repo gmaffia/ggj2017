@@ -3510,6 +3510,9 @@
 					<PropertyList>
 						<Property Name="EnablePanner" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>9</Value>
+							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{32AFCA55-D9BB-41FA-A5D8-69166B6CBA18}" ShortID="1052305452">
 									<ReferenceList>
@@ -3896,7 +3899,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+							<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3977,7 +3980,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+							<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -4011,7 +4014,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E9A1E654-1586-42B8-B553-9E3A683D999D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
+							<ObjectRef Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}" WorkUnitID="{64CCC328-21BF-49B0-B854-49E49F042E52}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

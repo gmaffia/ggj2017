@@ -6,6 +6,13 @@
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
 						<Bus Name="SFX" ID="{BB67DF39-265F-4C7B-A759-5A120822349D}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="SFXReverb" ID="{9622B9FF-FCF7-4A24-ACF1-4AB10837053C}"/>
 							</ChildrenList>

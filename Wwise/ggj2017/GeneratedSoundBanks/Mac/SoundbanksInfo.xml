@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>/Users/kevinmilillo/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/GitHub Repositories/ggj2017/Wwise/ggj2017/</ProjectRoot>
+		<SourceFilesRoot>/Users/kevinmilillo/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/GitHub Repositories/ggj2017/Wwise/ggj2017/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/kevinmilillo/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/GitHub Repositories/ggj2017/Wwise/ggj2017/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Gabriel\Documents\ggj2017\Wwise\ggj2017\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/kevinmilillo/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/GitHub Repositories/ggj2017/Wwise/ggj2017/GeneratedSoundBanks/Mac/</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -32,207 +32,211 @@
 			<IncludedMemoryFiles>
 				<File Id="49004493" Language="SFX">
 					<ShortName>Pasos Player Hombre_10.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_10_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_10_50DB02DB.wem</Path>
 				</File>
 				<File Id="95293301" Language="SFX">
 					<ShortName>Pasos Asesino_6.wav</ShortName>
-					<Path>SFX\Pasos Asesino_6_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_6_50DB02DB.wem</Path>
 				</File>
 				<File Id="95697694" Language="SFX">
 					<ShortName>Pasos Player Hombre_5.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_5_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_5_50DB02DB.wem</Path>
 				</File>
 				<File Id="96620774" Language="SFX">
 					<ShortName>Pasos Asesino_8.wav</ShortName>
-					<Path>SFX\Pasos Asesino_8_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_8_50DB02DB.wem</Path>
 				</File>
 				<File Id="111363138" Language="SFX">
 					<ShortName>Cadenas Asesino Lead_4.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Lead_4_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Lead_4_50DB02DB.wem</Path>
 				</File>
 				<File Id="116526303" Language="SFX">
 					<ShortName>Pasos Player Mujer_5.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_5_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_5_50DB02DB.wem</Path>
 				</File>
 				<File Id="120774532" Language="SFX">
 					<ShortName>Cadenas Asesino Back_3.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Back_3_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Back_3_50DB02DB.wem</Path>
 				</File>
 				<File Id="145626209" Language="SFX">
 					<ShortName>Pasos Player Mujer.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_50DB02DB.wem</Path>
 				</File>
 				<File Id="159033061" Language="SFX">
 					<ShortName>Pasos Player Mujer_7.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_7_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_7_50DB02DB.wem</Path>
 				</File>
 				<File Id="184932833" Language="SFX">
 					<ShortName>Pasos Player Hombre_6.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_6_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_6_50DB02DB.wem</Path>
 				</File>
 				<File Id="200231462" Language="SFX">
 					<ShortName>Pasos Player Mujer_11.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_11_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_11_50DB02DB.wem</Path>
 				</File>
 				<File Id="208202534" Language="SFX">
 					<ShortName>Pasos Player Mujer_3.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_3_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_3_50DB02DB.wem</Path>
 				</File>
 				<File Id="217929582" Language="SFX">
 					<ShortName>Radio Wave Emit.wav</ShortName>
-					<Path>SFX\Radio Wave Emit_9E69E797.wem</Path>
+					<Path>SFX/Radio Wave Emit_50DB02DB.wem</Path>
 				</File>
 				<File Id="221113097" Language="SFX">
 					<ShortName>Cadenas Asesino Back_2.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Back_2_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Back_2_50DB02DB.wem</Path>
 				</File>
 				<File Id="237391825" Language="SFX">
 					<ShortName>Pasos Asesino_5.wav</ShortName>
-					<Path>SFX\Pasos Asesino_5_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_5_50DB02DB.wem</Path>
 				</File>
 				<File Id="245228737" Language="SFX">
 					<ShortName>Pasos Asesino_1.wav</ShortName>
-					<Path>SFX\Pasos Asesino_1_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_1_50DB02DB.wem</Path>
 				</File>
 				<File Id="251371776" Language="SFX">
 					<ShortName>Pasos Player Mujer_13.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_13_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_13_50DB02DB.wem</Path>
+				</File>
+				<File Id="281167809" Language="SFX">
+					<ShortName>GGJ 17 Music.wav</ShortName>
+					<Path>SFX/GGJ 17 Music_0CDD8189.wem</Path>
 				</File>
 				<File Id="294824623" Language="SFX">
 					<ShortName>Pasos Player Hombre_2.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_2_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_2_50DB02DB.wem</Path>
 				</File>
 				<File Id="303309556" Language="SFX">
 					<ShortName>Cadenas Asesino Back_4.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Back_4_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Back_4_50DB02DB.wem</Path>
 				</File>
 				<File Id="323666100" Language="SFX">
 					<ShortName>Pasos Player Hombre_7.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_7_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_7_50DB02DB.wem</Path>
 				</File>
 				<File Id="342481030" Language="SFX">
 					<ShortName>Pasos Player Hombre_4.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_4_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_4_50DB02DB.wem</Path>
 				</File>
 				<File Id="349741933" Language="SFX">
 					<ShortName>Pasos Player Mujer_4.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_4_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_4_50DB02DB.wem</Path>
 				</File>
 				<File Id="355663969" Language="SFX">
 					<ShortName>Pasos Asesino.wav</ShortName>
-					<Path>SFX\Pasos Asesino_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_50DB02DB.wem</Path>
 				</File>
 				<File Id="358618114" Language="SFX">
 					<ShortName>Pasos Player Hombre_3.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_3_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_3_50DB02DB.wem</Path>
 				</File>
 				<File Id="367477040" Language="SFX">
 					<ShortName>Cadenas Asesino Back.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Back_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Back_50DB02DB.wem</Path>
 				</File>
 				<File Id="391818444" Language="SFX">
 					<ShortName>Pasos Player Hombre_1.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_1_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_1_50DB02DB.wem</Path>
 				</File>
 				<File Id="410789929" Language="SFX">
 					<ShortName>Pasos Asesino_7.wav</ShortName>
-					<Path>SFX\Pasos Asesino_7_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_7_50DB02DB.wem</Path>
 				</File>
 				<File Id="435169856" Language="SFX">
 					<ShortName>Pasos Player Mujer_10.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_10_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_10_50DB02DB.wem</Path>
 				</File>
 				<File Id="445645090" Language="SFX">
 					<ShortName>Pasos Player Mujer_14.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_14_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_14_50DB02DB.wem</Path>
 				</File>
 				<File Id="446725775" Language="SFX">
 					<ShortName>Pasos Player Mujer_9.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_9_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_9_50DB02DB.wem</Path>
 				</File>
 				<File Id="450119771" Language="SFX">
 					<ShortName>Pasos Player Mujer_6.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_6_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_6_50DB02DB.wem</Path>
 				</File>
 				<File Id="475120507" Language="SFX">
 					<ShortName>Pasos Asesino_2.wav</ShortName>
-					<Path>SFX\Pasos Asesino_2_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_2_50DB02DB.wem</Path>
 				</File>
 				<File Id="476261201" Language="SFX">
 					<ShortName>Pasos Player Hombre.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_50DB02DB.wem</Path>
 				</File>
 				<File Id="479941954" Language="SFX">
 					<ShortName>Cadenas Asesino Lead_1.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Lead_1_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Lead_1_50DB02DB.wem</Path>
 				</File>
 				<File Id="627632745" Language="SFX">
 					<ShortName>Pasos Player Hombre_11.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_11_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_11_50DB02DB.wem</Path>
 				</File>
 				<File Id="647639011" Language="SFX">
 					<ShortName>Pasos Player Hombre_9.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_9_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_9_50DB02DB.wem</Path>
 				</File>
 				<File Id="647886667" Language="SFX">
 					<ShortName>Pasos Asesino_4.wav</ShortName>
-					<Path>SFX\Pasos Asesino_4_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_4_50DB02DB.wem</Path>
 				</File>
 				<File Id="704947831" Language="SFX">
 					<ShortName>Pasos Player Mujer_15.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_15_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_15_50DB02DB.wem</Path>
 				</File>
 				<File Id="723164075" Language="SFX">
 					<ShortName>Pasos Player Mujer_1.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_1_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_1_50DB02DB.wem</Path>
 				</File>
 				<File Id="738397765" Language="SFX">
 					<ShortName>Slasher Radio Interference.wav</ShortName>
-					<Path>SFX\Slasher Radio Interference_9E69E797.wem</Path>
+					<Path>SFX/Slasher Radio Interference_50DB02DB.wem</Path>
 				</File>
 				<File Id="813067788" Language="SFX">
 					<ShortName>Cadenas Asesino Lead_2.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Lead_2_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Lead_2_50DB02DB.wem</Path>
 				</File>
 				<File Id="837077488" Language="SFX">
 					<ShortName>Pasos Player Mujer_2.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_2_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_2_50DB02DB.wem</Path>
 				</File>
 				<File Id="864916256" Language="SFX">
 					<ShortName>Cadenas Asesino Lead_3.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Lead_3_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Lead_3_50DB02DB.wem</Path>
 				</File>
 				<File Id="866921894" Language="SFX">
 					<ShortName>Pasos Asesino_3.wav</ShortName>
-					<Path>SFX\Pasos Asesino_3_9E69E797.wem</Path>
+					<Path>SFX/Pasos Asesino_3_50DB02DB.wem</Path>
 				</File>
 				<File Id="914466906" Language="SFX">
 					<ShortName>Cadenas Asesino Lead.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Lead_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Lead_50DB02DB.wem</Path>
 				</File>
 				<File Id="915568092" Language="SFX">
 					<ShortName>Pasos Player Hombre_8.wav</ShortName>
-					<Path>SFX\Pasos Player Hombre_8_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Hombre_8_50DB02DB.wem</Path>
 				</File>
 				<File Id="990805058" Language="SFX">
 					<ShortName>Pasos Player Mujer_8.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_8_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_8_50DB02DB.wem</Path>
 				</File>
 				<File Id="1013488350" Language="SFX">
 					<ShortName>Panting.wav</ShortName>
-					<Path>SFX\Panting_9E69E797.wem</Path>
+					<Path>SFX/Panting_50DB02DB.wem</Path>
 				</File>
 				<File Id="1025407191" Language="SFX">
 					<ShortName>Pasos Player Mujer_12.wav</ShortName>
-					<Path>SFX\Pasos Player Mujer_12_9E69E797.wem</Path>
+					<Path>SFX/Pasos Player Mujer_12_50DB02DB.wem</Path>
 				</File>
 				<File Id="1062305158" Language="SFX">
 					<ShortName>Cadenas Asesino Back_1.wav</ShortName>
-					<Path>SFX\Cadenas Asesino Back_1_9E69E797.wem</Path>
+					<Path>SFX/Cadenas Asesino Back_1_50DB02DB.wem</Path>
 				</File>
 				<File Id="1065461361" Language="SFX">
 					<ShortName>Radio Wave Listen.wav</ShortName>
-					<Path>SFX\Radio Wave Listen_9E69E797.wem</Path>
+					<Path>SFX/Radio Wave Listen_50DB02DB.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

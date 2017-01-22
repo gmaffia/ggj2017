@@ -8,7 +8,8 @@ public class PlayerController : NetworkBehaviour
     public GameObject markerPrefab;
     public float destroyAfter = 3.0f;
     public float velocity = 3.0f;
-
+	public float radioCountdown = 0;
+	public float radioCooldown = 5;
     private GameObject currentMarker = null;
 	private Rigidbody2D rBody;
 
@@ -16,10 +17,12 @@ public class PlayerController : NetworkBehaviour
 	private GameManager gameManager;
 	// Use this for initialization
 	void Start () {
+		
 		gameManager = FindObjectOfType<GameManager> ();
 		charAnimator = GetComponent<Animator> ();
 		sprite = GetComponent<SpriteRenderer> ();
 		rBody = GetComponent<Rigidbody2D> ();
+
         if (isServer)
         {
             CmdJoinPlayer();
@@ -107,16 +110,23 @@ public class PlayerController : NetworkBehaviour
 						charAnimator.SetBool ("FacingBack", false);
 					}
 				} else {
+					charAnimator.SetBool ("Walking", false);
 					//Not Moving
 				}
 			}
+			lastPostion.x = transform.position.x;
+			lastPostion.y = transform.position.y;
 		}
 	}
+	public LightController lightControl;
 	// Update is called once per frame
 	void Update () {
 		Animate ();
-		if (isLocalPlayer && (tag == "Alice" || tag == "Bob") && Input.GetKeyDown(KeyCode.Space))
+		radioCountdown -= Time.deltaTime;
+		if (isLocalPlayer && (tag == "Alice" || tag == "Bob") && Input.GetKeyDown(KeyCode.Space)  && radioCountdown<0)
         {
+			lightControl.grow ();
+			radioCountdown = radioCooldown;
             CmdDisclosePosition();
         }
 		if (isServer) {
