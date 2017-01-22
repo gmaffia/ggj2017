@@ -31,4 +31,22 @@ public class CharacterIdentifier : NetworkBehaviour
 				break;
 		}
 	}
+	public override void OnStartClient ()
+	{
+		base.OnStartClient ();
+		Debug.Log ("Old->>>"+playerId);
+		Animator charAnimator = GetComponent<Animator> ();
+		//FindObjectOfType<GameManager> ().currentPlayer
+		switch (playerId) {
+		case ("Alice"):
+			charAnimator.SetTrigger ("Alice");
+			break;
+		case ("Bob"):
+			charAnimator.SetTrigger ("Bob");
+			break;
+		case ("Slasher"):
+			charAnimator.SetTrigger ("Slasher");
+			break;
+		}
+	}
 }
