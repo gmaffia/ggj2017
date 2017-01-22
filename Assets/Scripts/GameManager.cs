@@ -12,10 +12,10 @@ public class GameManager : NetworkBehaviour {
     public SyncListInt spawnIndexes = new SyncListInt();
     public string[] availablePlayers = new string[3] { "Alice", "Bob", "Slasher" };
     public string currentPlayer = null;
-<<<<<<< HEAD
+
 	public string HeroScene;
 	public string SlasherScene;
-=======
+
 
     void Start()
     {        
@@ -31,7 +31,7 @@ public class GameManager : NetworkBehaviour {
         }
     }
 
->>>>>>> 47f71919bc1892c3bfe90eace3108712c512d9dc
+
     public string registerPlayer()
     {
         string playerId = availablePlayers[players.Count];
