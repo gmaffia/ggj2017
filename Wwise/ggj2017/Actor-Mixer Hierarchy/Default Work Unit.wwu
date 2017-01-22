@@ -3866,32 +3866,9 @@
 				<SwitchContainer Name="player_radio_interfernece" ID="{30922919-BC45-45B1-9F37-0EF0949EB33D}" ShortID="917981565">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{F2AF0968-E2CB-4EA9-9C5A-A53EF5500B20}" ShortID="446613511">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="player1_to_slasher_distance" ID="{5CDC03C6-EABF-4E46-8EA1-0E55D892AB53}" WorkUnitID="{A6C6E9A2-FB19-4492-9986-5C08B76BA758}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{0A84CBE3-8761-45E2-8F57-4BEDCB55CD35}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>0</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-200</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
