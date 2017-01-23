@@ -20,3 +20,4 @@ A 2v1 multiplayer game created for Global Game Jam 2017
  - Arrow Keys: Move
  - Spacebar: Boost view range, emit GPS ping (heroes only, can be seen by both humans and the monsters)
  
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
